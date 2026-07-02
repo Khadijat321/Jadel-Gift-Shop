@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadel Gift Shop | Premium Gifts in Ojo, Lagos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-gift"></i>
+            Jadel Gift Shop
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#" class="logo">
+                <i class="fas fa-gift"></i>
+                Jadel
+            </a>
+            <button class="mobile-menu-close" onclick="toggleMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#home" onclick="toggleMenu()"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#products" onclick="toggleMenu()"><i class="fas fa-box-open"></i> Products</a></li>
+            <li><a href="#location" onclick="toggleMenu()"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+            <li><a href="#contact" onclick="toggleMenu()"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                Premium Gift Shop in Ojo, Lagos
+            </div>
+            <h1>Make Every Moment <span>Special</span></h1>
+            <p>Discover unique, handpicked gifts for every occasion. From birthdays to anniversaries, we help you find the perfect present that speaks from the heart.</p>
+            <div class="hero-buttons">
+                <a href="tel:09037106566" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Call Now
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=2+Sule+Descendants+str+church+bus+stop,+Lagos+-+Badagry+Expy,+Ojo,+Lagos" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Get Directions
+                </a>
+            </div>
+            <div style="margin-top: 2rem;">
+                <span class="delivery-badge">
+                    <i class="fas fa-truck"></i>
+                    Delivery Available
+                </span>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header reveal">
+            <h2>About Jadel Gift Shop</h2>
+            <div class="gold-line"></div>
+            <p>Your trusted destination for thoughtful gifts in Ojo, Lagos</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&h=500&fit=crop" alt="Jadel Gift Shop">
+            </div>
+            <div class="about-content reveal">
+                <h3>Curated with Love, Delivered with Care</h3>
+                <p>Located at 2 Sule Descendants Street, Church Bus Stop along the Lagos-Badagry Expressway in Ojo, Jadel Gift Shop has been serving the community with premium gift items that bring joy to every celebration.</p>
+                <p>We believe that the right gift can turn an ordinary day into an extraordinary memory. Our carefully curated collection features something special for everyone.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div>
+                            <h4>Premium Quality</h4>
+                            <p>Only the finest selection</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <div>
+                            <h4>Fast Delivery</h4>
+                            <p>We deliver to your door</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <h4>Personalized</h4>
+                            <p>Gifts tailored for you</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div>
+                            <h4>Best Prices</h4>
+                            <p>Quality at great value</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-header reveal">
+            <h2>Our Collections</h2>
+            <div class="gold-line"></div>
+            <p>Explore our wide range of gift categories perfect for any occasion</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Jewelry & Accessories</h3>
+                    <p>Elegant necklaces, bracelets, watches, and accessories that add sparkle to any outfit.</p>
+                    <span class="product-tag">Best Sellers</span>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <i class="fas fa-baby"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Baby & Kids Gifts</h3>
+                    <p>Adorable toys, clothing, and keepsakes for the little ones in your life.</p>
+                    <span class="product-tag">New Arrivals</span>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <i class="fas fa-wine-glass"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Home & Living</h3>
+                    <p>Beautiful home decor, kitchenware, and lifestyle items for modern homes.</p>
+                    <span class="product-tag">Popular</span>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <i class="fas fa-birthday-cake"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Party Supplies</h3>
+                    <p>Balloons, decorations, party favors, and everything you need to celebrate.</p>
+                    <span class="product-tag">Seasonal</span>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Romantic Gifts</h3>
+                    <p>Perfumes, flowers, chocolates, and romantic surprises for your special someone.</p>
+                    <span class="product-tag">Top Rated</span>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Personalized Items</h3>
+                    <p>Custom engravings, photo frames, and bespoke gifts with a personal touch.</p>
+                    <span class="product-tag">Custom Made</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="contact">
+        <div class="section-header reveal">
+            <h2>Visit Us Today</h2>
+            <div class="gold-line"></div>
+            <p>Everything you need to know to find and connect with us</p>
+        </div>
+        <div class="info-grid">
+            <div class="info-card reveal">
+                <div class="info-card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Our Address</h3>
+                <p>2 Sule Descendants Street<br>Church Bus Stop<br>Lagos - Badagry Expressway<br>Ojo, Lagos, Nigeria</p>
+                <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--gold);">
+                    <i class="fas fa-map-pin"></i> Plus Code: F5FP+3Q Lagos
+                </p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-card-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Opening Hours</h3>
+                <p>Monday - Saturday<br>Opens daily until <strong>6:30 PM</strong></p>
+                <div class="status-badge">
+                    Currently Open
+                </div>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-card-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Contact Us</h3>
+                <p>
+                    <a href="tel:09037106566">
+                        <i class="fas fa-phone"></i> 0903 710 6566
+                    </a>
+                </p>
+                <p style="margin-top: 0.5rem;">
+                    <a href="https://wa.me/2349037106566" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="location">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3!2d3.1!3d6.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjcnMDAuMCJOIDPCsDA2JzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            <div class="map-overlay">
+                <h3><i class="fas fa-store" style="color: var(--gold);"></i> Jadel Gift Shop</h3>
+                <p>Ojo, Lagos · Open until 6:30 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header reveal">
+            <h2>What Our Customers Say</h2>
+            <div class="gold-line"></div>
+            <p>Real stories from happy customers in our community</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Jadel Gift Shop never disappoints! I found the perfect anniversary gift for my wife. The quality is amazing and the prices are very reasonable.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div class="author-info">
+                        <h4>Ademola K.</h4>
+                        <span>Ojo, Lagos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Fast delivery and beautiful packaging! I ordered a birthday gift for my sister and it arrived right on time. Highly recommend their service.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">C</div>
+                    <div class="author-info">
+                        <h4>Chioma O.</h4>
+                        <span>Badagry, Lagos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>The best gift shop along the Badagry expressway! They have such a wide variety of items. The staff is very helpful in picking the right gift.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">J</div>
+                    <div class="author-info">
+                        <h4>John D.</h4>
+                        <span>Iba, Lagos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="reveal">
+            <h2>Ready to Find the Perfect Gift?</h2>
+            <p>Visit us today at Church Bus Stop, Ojo or give us a call. We're here to help you make every occasion memorable.</p>
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="tel:09037106566" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Call: 0903 710 6566
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=2+Sule+Descendants+str+church+bus+stop,+Lagos+-+Badagry+Expy,+Ojo,+Lagos" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-directions"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fas fa-gift"></i>
+                    Jadel Gift Shop
+                </a>
+                <p>Your trusted destination for premium gifts in Ojo, Lagos. Making every moment special with thoughtfully curated presents for every occasion.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Gift Wrapping</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Personalization</a></li>
+                    <li><a href="#">Bulk Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:09037106566">0903 710 6566</a></li>
+                    <li><a href="#">2 Sule Descendants St</a></li>
+                    <li><a href="#">Ojo, Lagos</a></li>
+                    <li><a href="#">Open until 6:30 PM</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> 2026 Jadel Gift Shop. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--gold);"></i> in Lagos</p>
+        </div>
+    </footer>
+
+    <!-- Quick Action Buttons -->
+    <div class="quick-actions">
+        <a href="tel:09037106566" class="quick-action-btn phone" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/2349037106566" target="_blank" class="quick-action-btn" title="WhatsApp" style="background: #25D366; color: white;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=2+Sule+Descendants+str+church+bus+stop,+Lagos+-+Badagry+Expy,+Ojo,+Lagos" target="_blank" class="quick-action-btn" title="Directions">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+    </div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
