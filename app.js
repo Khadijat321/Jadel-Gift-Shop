@@ -1,5 +1,4 @@
- <script>
-        // Navbar scroll effect
+// Navbar scroll effect
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -62,4 +61,3 @@
         }
         updateStatus();
         setInterval(updateStatus, 60000); // Update every minute
-    </script>
